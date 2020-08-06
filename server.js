@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.use('/peerjs', peerServer);
 
 app.get('/', (req, res) => {
-    res.redirect(`/${uuidv4()}`);
+    res.redirect(`/${uuid()}`);
 })
 
 app.get('/:room', (req, res) => {
